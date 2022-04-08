@@ -3,7 +3,7 @@
 /**
  * main - entry point
  *
- * main - Print all possible combinations of two diffent digits, 
+ * main - Print all possible combinations of two diffent digits 
  * in ascending order, separated by a comma followed by a space.
  *
  * Return: 0
