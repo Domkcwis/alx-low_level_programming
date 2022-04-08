@@ -3,7 +3,7 @@
 /**
  * main - entry point
  *
- * main - Prints all possible combinations of two diffent digits, 
+ * main - Prints all possible combinations of two diffent digits,
  * in ascending order, separated by a comma followed by a space.
  *
  * Return: 0
@@ -21,6 +21,7 @@ putchar((digit2 % 10) + '0');
 
 if (digit1 == 8 && digit2 == 9)
 continue;
+
 
 putchar(',');
 putchar(' ');
