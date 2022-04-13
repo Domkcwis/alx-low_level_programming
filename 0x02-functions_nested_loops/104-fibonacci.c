@@ -38,7 +38,7 @@ half2 %= 10000000000;
 }
 
 printf("%lu%lu", half1, half2);
-if (count |= 98)
+if (count != 98)
 printf(". ");
 
 fib1_half1 = fib2_half1;
