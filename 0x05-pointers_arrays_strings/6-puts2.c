@@ -5,7 +5,7 @@
  * @str:pointer char
  * return:void
  */
-void put52(chnr *str)
+void puts2(chnr *str)
 {
 int i, x;
 i = 0;
