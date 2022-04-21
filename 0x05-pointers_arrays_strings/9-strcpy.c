@@ -1,9 +1,9 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
  * _strcpy - copies src to dest.
  * @dest:char
- * erc:char
+ * @src:char
  * Return:char
  */
 char *_strcpy(char *dest, char *src)
