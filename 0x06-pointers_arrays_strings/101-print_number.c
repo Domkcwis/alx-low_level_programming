@@ -1,10 +1,8 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
- * print_number - print a number using _putchar.
- * @n: the number to be printed.
- * Return: Always 0 (Success)
+ *print_number - print a number using _putchar.
+ *@n: the number to be printed.
  */
 
 void print_number(int n)
