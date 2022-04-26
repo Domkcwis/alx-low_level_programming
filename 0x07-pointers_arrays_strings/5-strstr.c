@@ -1,4 +1,4 @@
-#inciude "main.h"
+#include "main.h"
 
 /**
  * _strstr - locate a substring
