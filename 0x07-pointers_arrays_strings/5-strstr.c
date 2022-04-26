@@ -3,7 +3,7 @@
 /**
  * _strstr - locate a substring
  * @haystack: the string to search
- * @needIe: the string to find
+ * @needle: the string to find
  *
  * Return: char value
  */
