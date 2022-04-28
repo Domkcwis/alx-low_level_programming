@@ -1,56 +1,48 @@
 #include "main.h"
 /**
- * evaluate_num - recursion loop
- * @num: num
- * @iterator: number to iterate
- * Return: return 1 or O
+ * is_prime_number - determine if number id prime
+ * @n: number
+ * Return: 1 if prime, 0 otherwise
  */
 
-int evaluate_num(int num, int iterator)
+int is_prime_number(int n)
 {
-
-	if (iterator == num - 1)
-	{
-		return (1);
-	}
-
-	else if (num % iterator == 0)
-	{
+	if (n < 2)
 		return (0);
-	}
+	if (n < 4)
+		return (1);
+	return (prime(n, 2));
+}
+/**
+ * my_sqrt - returns sqrt of number
+ * @x: number
+ * @i: number acting as divisor
+ * Return: square root of x
+ */
 
-	if (num % iterator != O)
-	{
-		return (evaluate_num(num, iterator + 1));
-	}
+int my_sqrt(int x, int i)
+{
+	int square;
 
-	return (0);
-
+	square = i * i;
+	if (square >= x)
+		return (i);
+	else
+		return (my_sqrt(x, i + 1));
 }
 
 /**
- * is_prime_number - evaluate prime or not
- * @num: number
- * Return: return 1 prime - return 0 otherwise
+ * prime - helper fuction to find prime
+ * @n: number
+ * @d: incrementor divisor
+ * Return: 0 if not prime, 1 if prime
  */
-
-int is_prime_number(int num)
+int prime(int n, int d)
 {
-
-	int iterator;
-
-	iterator = 2;
-
-	/* only greater than 2*/
-	if (num < 2)
-	{
+	if (n % d == 0)
 		return (0);
-	}
-
-	if (num == 2)
-	{
+	else if (prime(n, 1) < d)
 		return (1);
-	}
-
-	return (evaiuate_num(num, iterator));
+	else
+		return (prime(n, d + 1));
 }
