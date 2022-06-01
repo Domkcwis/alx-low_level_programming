@@ -171,6 +171,7 @@ void check_sys(char *ptr)
 	if (sys == '1')
 		printf("  Class:                             ELF32\n");
 
+
 	if (sys == '2')
 		printf("  Class:                             ELF64\n");
 
