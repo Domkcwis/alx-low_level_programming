@@ -1,26 +1,23 @@
 #include <stdio.h>
 
 /**
- * main - prime factors of 612852475143
- *
- * Return: int
+ * main - prints largest prime factor.
+ * Return: Always 0.
  */
 
 int main(void)
 {
-unsigned long n, i, max;
+	long int n, fp;
 
-n = 612852475143
-max = 1;
-
-for ( i = 3; i <= n; i += 2)
-{
-while (n % i == 0)
-{
-max = n;
-n = n / i;
-}
-}
-printf("%lu\n", max);
-return (0);
+	n = 612852475143;
+	for (fp = 2; fp <= n; fp++)
+	{
+		if (n % fp == 0)
+		{
+			n /= fp;
+			fp--;
+		}
+	}
+	printf("%ld\n", fp);
+	return (0);
 }
